@@ -10,9 +10,7 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:extension.sayHello"
-  ],
+  "activationEvents": [],
   "main": "./out/src/extension",
   "contributes": {
     "commands": [
