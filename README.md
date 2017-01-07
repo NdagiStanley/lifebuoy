@@ -1,21 +1,37 @@
-# lifesaver README
+# lifebuoy README
 
-This is the README for your extension "lifesaver". After writing up a brief description, we recommend including the following sections.
+This is the README for "lifebuoy" extension.
+
+This extension informs every VS code user of the battery level of their machine regarless of Operating System.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Once the extension is updated the battery-level is displayed on the right-hand side of the status bar of VS Code. Here is a screenshot:
 
-For example if there is an image subfolder under your extension project workspace:
+![Lifebouy screenshot](images/battery_level.png)
 
-\!\[feature X\]\(images/feature-x.png\)
+## 2 Easy Steps
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Run Lifebouy
+
+    Press Ctrl+Shift+P (Mac: Cmd+Shift+P) then type `Lifebouy` Lifebouy should appear in the dropdown list.
+
+    ![Activating Lifebouy screenshot](images/activating_lifebouy.png)
+
+2. Close the information bar upon activation
+
+    ![Lifebouy Activation message](images/activation_message.png)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+The extension requires the npm package: [battery-level](https://www.npmjs.com/package/battery-level)
 
+To install it, simply run:
+
+`$ npm install battery-level`
+
+<!--
+Next release
 ## Extension Settings
 
 Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
@@ -26,10 +42,12 @@ This extension contributes the following settings:
 
 * `myExtension.enable`: enable/disable this extension
 * `myExtension.thing`: set to `blah` to do something
+-->
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- The battery level is not updating in real time.
+- The float point of the battery level is sometimes skewed. The issue is open [here](https://github.com/NdagiStanley/lifesaver/issues/1).
 
 ## Release Notes
 
@@ -37,8 +55,9 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release of lifebuoy :fireworks: :fire:
 
+<!--
 ### 1.0.1
 
 Fixed issue #.
@@ -46,20 +65,6 @@ Fixed issue #.
 ### 1.1.0
 
 Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+-->
 
 **Enjoy!**
