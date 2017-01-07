@@ -8,6 +8,7 @@ import * as assert from 'assert';
 
 // You can import and use all API from the 'vscode' module
 // as well as import your extension to test it
+// import * as vscode from 'vscode';
 import * as vscode from 'vscode';
 import * as myExtension from '../src/extension';
 
@@ -15,8 +16,7 @@ import * as myExtension from '../src/extension';
 suite("Extension Tests", () => {
 
     // Defines a Mocha unit test
-    test("Something 1", () => {
-        assert.equal(-1, [1, 2, 3].indexOf(5));
-        assert.equal(-1, [1, 2, 3].indexOf(0));
+    test("Check battery level display", () => {
+        assert.equal('activate', myExtension.activate.name);
     });
 });
