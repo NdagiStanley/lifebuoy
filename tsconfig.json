@@ -11,6 +11,8 @@
     },
     "exclude": [
         "node_modules",
-        ".vscode-test"
+        ".vscode-test",
+        "typings/node.d.ts",
+        "typings/vscode-typings.d.ts"
     ]
 }
