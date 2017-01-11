@@ -18,7 +18,7 @@ Once the extension is updated the battery-level is displayed on the right-hand s
 
     Press Ctrl+Shift+P (Mac: Cmd+Shift+P) then type `Lifebuoy` Lifebuoy should appear in the dropdown list.
 
-    ![Activating Lifebuoy screenshot](images/activating_Lifebuoy.png)
+    ![Activating Lifebuoy screenshot](images/activating_lifebuoy.png)
 
 2. Close the information bar upon activation
 
