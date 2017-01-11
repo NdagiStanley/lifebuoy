@@ -19,7 +19,7 @@ export function activate(context: ExtensionContext) {
         // The code you place here will be executed every time your command is executed
 
         // Display a message box to the user
-        window.showInformationMessage('Lifebouy is running on full screen!');
+        window.showInformationMessage('Lifebuoy is running on full screen!');
 
         var editor = window.activeTextEditor;
         if (!editor) {

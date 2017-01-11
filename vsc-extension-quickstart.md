@@ -13,7 +13,7 @@ We pass the function containing the implementation of the command as the second 
 
 ## Get up and running straight away
 * press `F5` to open a new window with your extension loaded
-* run your command from the command palette by pressing (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and typing `Lifebouy`
+* run your command from the command palette by pressing (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and typing `Lifebuoy`
 * set breakpoints in your code inside `src/extension.ts` to debug your extension
 * find output from your extension in the debug console
 
