@@ -10,19 +10,19 @@ This extension informs every VS code user of the battery level of their machine 
 
 Once the extension is updated the battery-level is displayed on the right-hand side of the status bar of VS Code. Here is a screenshot:
 
-![Lifebouy screenshot](images/battery_level.png)
+![Lifebuoy screenshot](images/battery_level.png)
 
 ## 2 Easy Steps
 
-1. Run Lifebouy
+1. Run Lifebuoy
 
-    Press Ctrl+Shift+P (Mac: Cmd+Shift+P) then type `Lifebouy` Lifebouy should appear in the dropdown list.
+    Press Ctrl+Shift+P (Mac: Cmd+Shift+P) then type `Lifebuoy` Lifebuoy should appear in the dropdown list.
 
-    ![Activating Lifebouy screenshot](images/activating_lifebouy.png)
+    ![Activating Lifebuoy screenshot](images/activating_Lifebuoy.png)
 
 2. Close the information bar upon activation
 
-    ![Lifebouy Activation message](images/activation_message.png)
+    ![Lifebuoy Activation message](images/activation_message.png)
 
 <!--## Requirements
 -->
