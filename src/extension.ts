@@ -29,8 +29,9 @@ export function activate(context: ExtensionContext) {
         var bat = window.createStatusBarItem(StatusBarAlignment.Right);
 
         bl().then(lvl => {
-            bat.text = `$(plug)` + lvl * 100 + "%";
-            bat.show()
+            const life = Math.floor(lvl * 100);
+            bat.text = `$(plug)` + life + "%";
+            bat.show();
         })
     });
 
