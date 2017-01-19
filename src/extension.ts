@@ -31,16 +31,17 @@ export function activate(context: ExtensionContext) {
 
         ch().then(result => {
             if (result == true) {
+                bat.hide();
                 bat.text = `$(plug)` + "...";
-                bat.show()
+                bat.show();
             } else {
                 bl().then(lvl => {
-                    bat.text = `$(plug)` + lvl * 100 + "%";
-                    bat.show()
+                    bat.hide();
+                    const life = Math.floor(lvl * 100);
+                    bat.text = `$(plug)` + life + "%";
+                    bat.show();
                 })
             }
-
-
         })
     });
 
@@ -49,5 +50,4 @@ export function activate(context: ExtensionContext) {
 
 // this method is called when your extension is deactivated
 export function deactivate() {
-    window.showInformationMessage('Lifebouy is sad to see you leave!');
 }

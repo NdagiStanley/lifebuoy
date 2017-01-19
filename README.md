@@ -8,9 +8,14 @@ This extension informs every VS code user of the battery level of their machine 
 
 ## Features
 
-Once the extension is updated the battery-level is displayed on the right-hand side of the status bar of VS Code. Here is a screenshot:
+Once the extension is updated the battery-level is displayed on the right-hand side of the status bar of VS Code. Here are 2 screenshots:
 
+While on battery:
 ![Lifebouy screenshot](images/battery_level.png)
+
+While on charge:
+![Lifebouy screenshot1](images/battery_charging.png)
+
 
 ## 2 Easy Steps
 
@@ -43,8 +48,7 @@ This extension contributes the following settings:
 
 ## Known Issues
 
-- The battery level is not updating in real time.
-- The float point of the battery level is sometimes skewed. The issue is open [here](https://github.com/NdagiStanley/lifesaver/issues/1).
+The issues are listed [here](https://github.com/NdagiStanley/lifebuoy/issues)
 
 ## Release Notes
 
@@ -54,11 +58,12 @@ Users appreciate release notes as you update your extension.
 
 Initial release of lifebuoy :fireworks: :fire:
 
-<!--
+
 ### 1.0.1
 
-Fixed issue #.
+Fixed issue [#7](https://github.com/NdagiStanley/lifebuoy/issues/7).
 
+<!--
 ### 1.1.0
 
 Added features X, Y, and Z.
