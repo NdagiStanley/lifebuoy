@@ -59,7 +59,7 @@ Users appreciate release notes as you update your extension.
 Initial release of lifebuoy :fireworks: :fire:
 
 
-### 1.0.1
+### 1.1.1
 
 Fixed issue [#7](https://github.com/NdagiStanley/lifebuoy/issues/7).
 
