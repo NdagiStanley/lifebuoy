@@ -3,6 +3,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import { commands, ExtensionContext, window, StatusBarAlignment } from 'vscode';
 import * as bl from 'battery-level';
+import * as ch from 'is-charging';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -28,9 +29,20 @@ export function activate(context: ExtensionContext) {
 
         var bat = window.createStatusBarItem(StatusBarAlignment.Right);
 
-        bl().then(lvl => {
-            bat.text = `$(plug)` + lvl * 100 + "%";
-            bat.show()
+        ch().then(result => {
+            if (result == true) {
+                bat.hide();
+                bat.text = `$(plug)` + "...";
+                bat.show();
+            } else {
+                bl().then(lvl => {
+                    bat.hide();
+                    const life = Math.floor(lvl * 100);
+                    bat.text = `$(plug)` + life + "%";
+                    bat.show();
+                })
+            }
+
         })
     });
 

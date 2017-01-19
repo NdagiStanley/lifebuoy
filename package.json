@@ -2,7 +2,7 @@
   "name": "lifebuoy",
   "displayName": "lifebuoy",
   "description": "",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "publisher": "NdagiStanley",
   "repository": {
     "type": "git",
@@ -40,6 +40,7 @@
     "@types/mocha": "^2.2.32"
   },
   "dependencies": {
-    "battery-level": "^2.0.1"
+    "battery-level": "^2.0.1",
+    "is-charging": "^1.1.0"
   }
 }
