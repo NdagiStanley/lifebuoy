@@ -22,11 +22,6 @@ export function activate(context: ExtensionContext) {
         // Display a message box to the user
         window.showInformationMessage('Lifebouy is running on full screen!');
 
-        var editor = window.activeTextEditor;
-        if (!editor) {
-            return;  // No open text editor
-        }
-
         var bat = window.createStatusBarItem(StatusBarAlignment.Right);
 
         ch().then(result => {
