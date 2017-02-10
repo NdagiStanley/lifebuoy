@@ -23,26 +23,31 @@ export function activate(context: ExtensionContext) {
         window.showInformationMessage('Lifebouy is running on full screen!');
 
         var editor = window.activeTextEditor;
-        if (!editor) {
-            return;  // No open text editor
-        }
+        // if (!editor) {
+        //     return;  // No open text editor
+        // }
 
-        var bat = window.createStatusBarItem(StatusBarAlignment.Right);
+        let bat = window.createStatusBarItem(StatusBarAlignment.Right);
+        // Run every minute
 
-        ch().then(result => {
-            if (result == true) {
-                bat.hide();
-                bat.text = `$(plug)` + "...";
-                bat.show();
-            } else {
-                bl().then(lvl => {
+        setInterval(() => {
+            ch().then(result => {
+                if (result == true) {
                     bat.hide();
-                    const life = Math.floor(lvl * 100);
-                    bat.text = `$(plug)` + life + "%";
+                    bat.text = `$(plug)...`;
                     bat.show();
-                })
-            }
-        })
+                } else {
+                    bl().then(lvl => {
+                        bat.hide();
+                        const life = Math.floor(lvl * 100);
+                        bat.text = `$(plug) ${life}%`;
+                        bat.show();
+                    })
+                }
+            });
+        }, 0);
+
+    
     });
 
     context.subscriptions.push(disposable);
