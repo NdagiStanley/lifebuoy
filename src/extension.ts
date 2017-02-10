@@ -22,14 +22,9 @@ export function activate(context: ExtensionContext) {
         // Display a message box to the user
         window.showInformationMessage('Lifebuoy is running on full screen!');
 
-        var editor = window.activeTextEditor;
-        // if (!editor) {
-        //     return;  // No open text editor
-        // }
-
         let bat = window.createStatusBarItem(StatusBarAlignment.Right);
-        // Run every minute
 
+        // Run every minute
         setInterval(() => {
             ch().then(result => {
                 if (result == true) {
@@ -47,7 +42,7 @@ export function activate(context: ExtensionContext) {
             });
         }, 0);
 
-    
+
     });
 
     context.subscriptions.push(disposable);

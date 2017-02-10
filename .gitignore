@@ -4,3 +4,4 @@ npm-debug*
 .DS_Store
 .vscode-test
 .vscode
+lifebuoy-0.1.0.vsix

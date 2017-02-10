@@ -6,7 +6,7 @@
     "publisher": "NdagiStanley",
     "repository": {
         "type": "git",
-        "url": "https://github.com/NdagiStanley/lifebuoy.git"
+        "url": "https://github.com/NdagiStanley/lifebouy.git"
     },
     "engines": {
         "vscode": "^1.5.0"
@@ -14,6 +14,11 @@
     "categories": [
         "Other"
     ],
+    "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#C80000",
+        "theme": "dark"
+    },
     "activationEvents": [
         "onCommand:extension.saveLife"
     ],
@@ -21,7 +26,7 @@
     "contributes": {
         "commands": [{
             "command": "extension.saveLife",
-            "title": "Lifebuoy"
+            "title": "Lifebouy"
         }]
     },
     "scripts": {
