@@ -2,7 +2,7 @@
   "name": "lifebuoy",
   "displayName": "lifebuoy",
   "description": "",
-  "version": "1.1.1",
+  "version": "1.1.6",
   "publisher": "NdagiStanley",
   "repository": {
     "type": "git",
@@ -16,8 +16,7 @@
   ],
   "icon": "images/icon.png",
   "galleryBanner": {
-    "color": "#C80000",
-    "theme": "dark"
+    "theme": "light"
   },
   "activationEvents": [
     "onCommand:extension.saveLife"
