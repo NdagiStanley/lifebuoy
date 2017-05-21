@@ -4,6 +4,7 @@
 import { commands, ExtensionContext, window, StatusBarAlignment } from 'vscode';
 import * as bl from 'battery-level';
 import * as ch from 'is-charging';
+import * as date from 'date-and-time';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -27,15 +28,16 @@ export function activate(context: ExtensionContext) {
         // Run every minute
         setInterval(() => {
             ch().then(result => {
+                const date_time = date.format(new Date(), 'hh:mm A');
                 if (result == true) {
                     bat.hide();
-                    bat.text = `$(plug)...`;
+                    bat.text = `$(plug)... | ${date_time}`;
                     bat.show();
                 } else {
                     bl().then(lvl => {
                         bat.hide();
                         const life = Math.floor(lvl * 100);
-                        bat.text = `$(plug) ${life}%`;
+                        bat.text = `$(plug) ${life}% | ${date_time}`;
                         bat.show();
                     })
                 }
