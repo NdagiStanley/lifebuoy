@@ -12,3 +12,6 @@ Fixes #[ISSUE NUMBER]
 #### Screenshots (if appropriate)
 
 #### Questions:
+
+<!--PS: To publisher -->
+<!--In case you are pushing to master for publishing, remove the svgs from the README. Apparently `vsce` doesn't allow svg(s)-->
