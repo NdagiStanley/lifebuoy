@@ -1,5 +1,7 @@
 # lifebuoy README
 
+[![Build Status](https://semaphoreci.com/api/v1/stanmd/lifebuoy/branches/develop/badge.svg)](https://semaphoreci.com/stanmd/lifebuoy)
+
 This is the README for "lifebuoy" extension.
 
 This extension informs every VS code user of the battery level of their machine regarless of Operating System.
