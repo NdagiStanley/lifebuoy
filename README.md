@@ -1,6 +1,8 @@
 # lifebuoy README
 
-[![Build Status](https://semaphoreci.com/api/v1/stanmd/lifesaver/branches/master/badge.svg)](https://semaphoreci.com/stanmd/lifesaver)
+[![Greenkeeper badge](https://badges.greenkeeper.io/NdagiStanley/lifebuoy.svg)](https://greenkeeper.io/)
+
+[![Build Status](https://semaphoreci.com/api/v1/stanmd/lifesaver/branches/develop/badge.svg)](https://semaphoreci.com/stanmd/lifesaver)
 
 This is the README for "lifebuoy" extension.
 
