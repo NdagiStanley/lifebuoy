@@ -1,8 +1,8 @@
 {
   "name": "lifebuoy",
   "displayName": "lifebuoy",
-  "description": "Lifebuoy saves you by showing you the time and battery level on the status bar",
-  "version": "1.3.1",
+  "description": "Lifebuoy saves! Get the time and battery level on the status bar",
+  "version": "1.3.2",
   "publisher": "NdagiStanley",
   "repository": {
     "type": "git",
