@@ -9,7 +9,7 @@
     "url": "https://github.com/NdagiStanley/lifebouy.git"
   },
   "engines": {
-    "vscode": "^1.5.0"
+    "vscode": "^2023.0.0"
   },
   "categories": [
     "Other"
