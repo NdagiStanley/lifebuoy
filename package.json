@@ -35,15 +35,15 @@
     "test": "node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "typescript": "^2.0.3",
+    "typescript": "^3.3.3333",
     "vscode": "^1.0.0",
-    "mocha": "^5.1.1",
-    "@types/node": "^10.0.6",
+    "mocha": "^6.0.2",
+    "@types/node": "^11.10.4",
     "@types/mocha": "^5.2.0"
   },
   "dependencies": {
     "battery-level": "^3.0.0",
     "date-and-time": "^0.6.2",
-    "is-charging": "^1.1.0"
+    "is-charging": "^2.0.0"
   }
 }
