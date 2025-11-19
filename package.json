@@ -44,6 +44,6 @@
   "dependencies": {
     "battery-level": "^3.0.0",
     "date-and-time": "^0.6.2",
-    "is-charging": "^1.1.0"
+    "is-charging": "^2.0.0"
   }
 }
